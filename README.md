@@ -35,6 +35,7 @@ GIF created with Licecap
 ## Notes
 
 Describe any challenges encountered while building the app.
+
 I struggle for a while when implementing the filter function because I need to get used to the DOM elements and functions in JavaScript. I managed to finish after reading the documentations and fixing bugs.
 ## License
 
