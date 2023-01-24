@@ -19,6 +19,30 @@ body {
     margin-top: -10px;
 }
 
+.navbar {
+    border-radius: 100px;
+    margin-left: 20px;
+    flex:auto;
+    text-decoration: none;
+    align-items: right;
+    justify-content: right;
+    text-align: center;
+    padding: 1% 2%;
+    font-size: 20px;
+    margin: 1%
+
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.navbar:hover {
+    background-color: #56a0ea; 
+    color: #000000; 
+    box-shadow: 0 0 10px #2f557c; 
+}
+
 .stats-container {
     display: flex;
 }
@@ -79,4 +103,13 @@ button {
     align-items: center;
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+}
+
+#search-bar {
+    font-family: 'Cabin'; 
+    padding: 0.5% 1%; 
+    margin: 1%; 
+    border-radius: 7px; 
+    border: none; 
+    background-color: #FFFFFF;
 }

@@ -187,3 +187,20 @@ firstGameContainer.appendChild(topPledgeGame)
 const runnerUp = document.createElement("p")
 runnerUp.textContent = secondGame.name
 secondGameContainer.appendChild(runnerUp)
+
+
+const searchBar = document.getElementById("search-bar");
+searchBar.addEventListener("keyup", function(event) {
+    const searchQuery = searchBar.value.toLowerCase();
+    const filteredGames = GAMES_JSON.filter(game => game.name.toLowerCase().includes(searchQuery));
+});
+searchBar.addEventListener("keyup", function(event) {
+    const searchQuery = searchBar.value.toLowerCase();
+    const filteredGames = GAMES_JSON.filter(game => game.name.toLowerCase().includes(searchQuery));
+    if(filteredGames.length === 0){
+        gamesContainer.innerHTML = "No Game Found";
+    }else{
+        deleteChildElements(gamesContainer);
+        addGamesToPage(filteredGames);
+    }
+});
